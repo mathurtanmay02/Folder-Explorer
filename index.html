@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="home">
+        <div id="name">
+            <h1>Folder Explorer</h1>
+        </div>
+        <div id="inpt-btn">
+            <input type="file" id="ctrl" webkitdirectory directory multiple onchange="fileInfo()" hidden/>
+            <a href="#table-div"><label for="ctrl"><h3>Choose Folder</h3></label></a>
+        </div>    
+        <img src="undraw_folder_files_re_2cbm.svg">
+    </div>
+
+    
+    <div id="table-div">
+        <table id="table">
+            <thead>
+                <tr id="-1">
+                    <th>File Name</th>
+                    <th>Size</th>
+                    <th>Info</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

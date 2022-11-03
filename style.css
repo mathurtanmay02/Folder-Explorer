@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(blob-scene-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Main Display  */
+#home { 
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+
+#table-div {
+    display: flex;
+    flex-direction: column;
+    padding: 0% 15% 0% 15%;
+}
+
+/* Heading CSS */
+#name h1 {
+    color: #486eb3;
+}
+
+#home img {
+    max-width: 500px;
+    padding: 0% 30%;
+}
+
+/* custom input button CSS */
+#inpt-btn a h3{
+    color: #344260;
+    outline-style: auto;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+#table-div {
+    display: none;
+}
+
+/* table initial state */
+#table-div table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid rgb(128, 221, 252);
+}
+
+#table-div table th , #table-div table td {
+    padding: 8px;
+}
+
+#table-div table tr:nth-child(even){background-color: #c2d5dd;}
+
+#table-div table tr:hover {background-color: rgb(188, 234, 255); border: 2px solid rgb(2, 185, 247);}
+
+#table-div table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #2196f3;;
+  color: rgb(50, 50, 49);
+}
+
+/* tooltip CSS */
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+/* Tooltip Text CSS */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -55px;
+    left: 120%;
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+  
+  
